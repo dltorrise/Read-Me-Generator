@@ -1,3 +1,8 @@
+//read through professional markdown thing
+//finish questions and finish template
+//finish badges
+//npm i
+
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
@@ -24,10 +29,10 @@ const questions = [
       default: 'npm init'
     },
     {
-      type: 'input', //default is input, and so you don't have to type this
-      name: 'food',
-      message: 'What is your favorite food?',
-      default: 'Cheetos'
+      type: 'list',
+      name: 'license',
+      message: 'Which license should yo use?',
+      choices: ['MIT', 'APACHE 2.0', 'BSD 3', 'other'],
     },
     {
       type: 'input', //default is input, and so you don't have to type this
@@ -36,14 +41,19 @@ const questions = [
     },
     {
       type: 'input', //default is input, and so you don't have to type this
-      name: 'github',
-      message: 'Link to Github?',
+      name: 'installation',
+      message: 'What command should be run to install dependencies?',
+      default: 'npm i'
     },
     {
-      type: 'password', 
-      name: 'secret',
-      message: 'What is your deepest secret?',
-      mask: '*'
+      type: 'input', 
+      name: 'usage',
+      message: 'What does the user need to know about using the repo?'
+    },
+    {
+      type: 'input', 
+      name: 'contribution',
+      message: 'What does the user need to know about contributing to the repo?'
     },
 ];
 
