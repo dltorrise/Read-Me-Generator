@@ -8,7 +8,7 @@ This is a README.md generator that uses Node js and the Inquirer Library Module.
 
 Here is a screenshot of an example output of the application
 
-[!Screenshot of README.md with command line on bottom](./Main/images/screenshot.png)
+![Screenshot of README.md with command line on bottom](./Main/images/screenshot.png)
 
 ## Video
 
