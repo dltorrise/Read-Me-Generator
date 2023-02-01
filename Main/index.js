@@ -1,5 +1,6 @@
-//table of contents
-//npm i
+//code blocks
+//git ignore
+//make video
 
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
@@ -16,50 +17,61 @@ const questions = [
 
     },
     {
-      type: 'input', 
-      name: 'description',
-      message: 'Provide a brief description of your project',
-      default: 'still in progress'
+        type: 'input', 
+        name: 'description',
+        message: 'Provide a brief description of your project',
+        default: 'Still in progress'
     },
     {
-      type: 'input', 
-      name: 'installation',
-      message: 'What is your method of installation?',
-      default: 'npm init'
+        type: 'input', 
+        name: 'installation',
+        message: 'What is your method of installation?',
+        default: 'npm init'
     },
     {
-      type: 'list',
-      name: 'license',
-      message: 'Which license are you using?',
-      choices: ['MIT', 'APACHE 2.0', 'BSD 3', 'other'],
+        type: 'list',
+        name: 'license',
+        message: 'Which license are you using?',
+        choices: ['MIT', 'APACHE 2.0', 'BSD 3', 'other'],
+        default: 'MIT'
     },
     {
-      type: 'input', 
-      name: 'installation',
-      message: 'What command should be run to install dependencies?',
-      default: 'npm i'
+        type: 'input', 
+        name: 'installation',
+        message: 'What command should be run to install dependencies?',
+        default: 'npm i'
     },
     {
-      type: 'input', 
-      name: 'usage',
-      message: 'What does the user need to know about using the repo?'
+        type: 'input', 
+        name: 'usage',
+        message: 'What does the user need to know about using the repo?',
+        default: 'Use at your discretion.'
     },
     {
-      type: 'input', 
-      name: 'contribution',
-      message: 'What does the user need to know about contributing to the repo?'
+        type: 'input', 
+        name: 'contribution',
+        message: 'What does the user need to know about contributing to the repo?',
+        default: 'Please stand by while I go over your changes'
     },
     {
         type: 'input', 
         name: 'test',
         message: 'What tests can the user run to debug code?',
         default: 'npm test'
-      },
+    },
+    {
+        type: 'input', 
+        name: 'email',
+        message: 'What is your email?',
+        default: 'workemail@workemail.com'
+    },
+    {
+        type: 'input', 
+        name: 'github',
+        message: 'What is your GitHub username?',
+        default: 'githubuser'
+    },
 ];
-
-// TODO: Create a function to write README file 
-//took filname out of parameter for sake of testing
-
 
 // TODO: Create a function to initialize app
 function init() {
@@ -67,12 +79,11 @@ function init() {
   .prompt(questions)
   .then((answers) => {
     console.log(answers)
-    //took from activity 20
     const fileName = 'README.md'
     const information = generateMarkdown(answers)
     console.log(information)
 
-    fs.writeFile(fileName, information, (err) => //ignore if there's no answer and \t
+    fs.writeFile(fileName, information, (err) => 
       err ? console.log(err) : console.log('Success!')
     );
   })

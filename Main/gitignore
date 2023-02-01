@@ -83,3 +83,4 @@ yarn.lock
 # from read me (not sure if '/' makes a difference)
 node_modules/
 .DS_Store/
+<!-- wonder if I could add read me as well -->

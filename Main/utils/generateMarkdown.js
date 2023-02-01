@@ -43,6 +43,13 @@ function renderLicenseSection(data) {
   }
 }
 
+
+//my attempt at adding code blocks
+function generateBackTicks(input) {
+  return `
+  ${input}
+  `
+}
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title}
@@ -51,30 +58,40 @@ function generateMarkdown(data) {
   
   ## Table of Contents
   
+  - i. [Description](#description)
+  - ii. [General Information](#general-information)
+    - i. [Installation](#installation)
+    - ii. [Usage](#usage)
+    - iii. [Contributions](#contributions)
+    - iv. [Tests](#tests)
+  - iii. [License](#license)
+  - iv. [Questions](#questions)
 
   ## Description
   
   ${data.description}
 
-  ## Installation
+  ## General Information
+  
+  ### Installation
   
   To install the necessary dependencies, run the following command:
   
   ${data.installation}
 
-  ## Usage 
+  ### Usage 
 
   ${data.usage}
   
-  ## Contributions
+  ### Contributions
 
   ${data.contribution}
   
-  ## Tests
+  ### Tests
 
   To run tests on the code, use the following command:
 
-  ${data.test}
+  ${generateBackTicks(data.test)}
 
   ## License
 
@@ -84,7 +101,7 @@ function generateMarkdown(data) {
 
   ## Questions
   
-  If you have any further questions, please email me at (${data.email})[${data.email}]
+  If you have any further questions, please email me at [${data.email}](${data.email}).
   
   Here is my [Github Profile](https://github.com/${data.github}) for more information on my other projects. 
 

@@ -4,30 +4,42 @@
   
   ## Table of Contents
   
+  - i. [Description](#description)
+  - ii. [General Information](#general-information)
+    - i. [Installation](#installation)
+    - ii. [Usage](#usage)
+    - iii. [Contributions](#contributions)
+    - iv. [Tests](#tests)
+  - iii. [License](#license)
+  - iv. [Questions](#questions)
 
   ## Description
   
-  still in progress
+  Still in progress
 
-  ## Installation
+  ## General Information
+  
+  ### Installation
   
   To install the necessary dependencies, run the following command:
   
   npm init
 
-  ## Usage 
+  ### Usage 
 
+  Use at your discretion.
   
-  
-  ## Contributions
+  ### Contributions
 
+  Please stand by while I go over your changes
   
-  
-  ## Tests
+  ### Tests
 
   To run tests on the code, use the following command:
 
+  
   npm test
+  
 
   ## License
 
@@ -37,7 +49,7 @@
 
   ## Questions
   
-  If you have any further questions, please email me at (undefined)[undefined]
+  If you have any further questions, please email me at [workemail@workemail.com](workemail@workemail.com)
   
-  Here is my [Github Profile](https://github.com/undefined) for more information on my other projects. 
+  Here is my [Github Profile](https://github.com/githubuser) for more information on my other projects. 
 
