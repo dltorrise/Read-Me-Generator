@@ -1,6 +1,4 @@
-//read through professional markdown thing
-//finish questions and finish template
-//finish badges
+//table of contents
 //npm i
 
 // TODO: Include packages needed for this application
@@ -12,18 +10,19 @@ const generateMarkdown = require('./utils/generateMarkdown');
 const questions = [
     {
         type: 'input', //default is input, and so you don't have to type this
-        name: 'nameofProject',
+        name: 'title',
         message: 'What is the name of your project?',
         default: 'Project 1'
 
     },
     {
-      type: 'input', //default is input, and so you don't have to type this
+      type: 'input', 
       name: 'description',
-      message: 'Provide a brief description of your project'
+      message: 'Provide a brief description of your project',
+      default: 'still in progress'
     },
     {
-      type: 'input', //default is input, and so you don't have to type this
+      type: 'input', 
       name: 'installation',
       message: 'What is your method of installation?',
       default: 'npm init'
@@ -31,16 +30,11 @@ const questions = [
     {
       type: 'list',
       name: 'license',
-      message: 'Which license should yo use?',
+      message: 'Which license are you using?',
       choices: ['MIT', 'APACHE 2.0', 'BSD 3', 'other'],
     },
     {
-      type: 'input', //default is input, and so you don't have to type this
-      name: 'linkedin',
-      message: 'Link to LinkedIn?',
-    },
-    {
-      type: 'input', //default is input, and so you don't have to type this
+      type: 'input', 
       name: 'installation',
       message: 'What command should be run to install dependencies?',
       default: 'npm i'
@@ -55,12 +49,17 @@ const questions = [
       name: 'contribution',
       message: 'What does the user need to know about contributing to the repo?'
     },
+    {
+        type: 'input', 
+        name: 'test',
+        message: 'What tests can the user run to debug code?',
+        default: 'npm test'
+      },
 ];
 
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) {
-    generateMarkdown()
-}
+// TODO: Create a function to write README file 
+//took filname out of parameter for sake of testing
+
 
 // TODO: Create a function to initialize app
 function init() {
@@ -70,8 +69,10 @@ function init() {
     console.log(answers)
     //took from activity 20
     const fileName = 'README.md'
+    const information = generateMarkdown(answers)
+    console.log(information)
 
-    fs.writeFile(fileName, writeToFile(answers), (err) => //ignore if there's no answer and \t
+    fs.writeFile(fileName, information, (err) => //ignore if there's no answer and \t
       err ? console.log(err) : console.log('Success!')
     );
   })

@@ -1,17 +1,13 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-function renderLicenseBadge(license) {
-  var badge
-  switch (data.license) {
+function renderLicenseBadge(data) {
+  switch (data) {
     case 'MIT':
-      badge = "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)"
-      break;
+      return "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)"
     case 'APACHE 2.0':
-      badge = "[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)"
-      break;
+      return "[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)"
     case 'BSD 3':
-      badge = "[![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)"
-      break;
+      return "[![License](https://img.shields.io/badge/License-BSD_3--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)"
     default: //return empty string
       break;
   }
@@ -19,18 +15,14 @@ function renderLicenseBadge(license) {
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
-function renderLicenseLink(license) {
-  var licenseLink 
-  switch (data.license) {
+function renderLicenseLink(data) { 
+  switch (data) {
     case 'MIT':
-      licenseLink = "https://opensource.org/licenses/MIT"
-      break;
+      return "https://opensource.org/licenses/MIT"
     case 'APACHE 2.0':
-      licenseLink = "https://opensource.org/licenses/Apache-2.0"
-      break;
+      return "https://opensource.org/licenses/Apache-2.0"
     case 'BSD 3':
-      licenseLink = "https://opensource.org/licenses/BSD-3-Clause"
-      break;
+      return "https://opensource.org/licenses/BSD-3-Clause"
     default: //return empty string
       break;
   }
@@ -38,18 +30,14 @@ function renderLicenseLink(license) {
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
-function renderLicenseSection(license) {
-  var licenseDescription
-  switch (data.license) {
+function renderLicenseSection(data) {
+  switch (data) {
     case 'MIT':
-      licenseDescription = "The license used in this project is the MIT License. For more information, check out the documentation below:"
-      break;
+      return "The license used in this project is the MIT License. For more information, check out the documentation below:"
     case 'APACHE 2.0':
-      licenseDescription = "The license used in this project is the APACHE 2.0 License. For more information, check out the documentation below:"
-      break;
+      return"The license used in this project is the APACHE 2.0 License. For more information, check out the documentation below:"
     case 'BSD 3':
-      licenseDescription = "The license used in this project is the BSD 3 License. For more information, check out the documentation below:"
-      break;
+      return "The license used in this project is the BSD 3 License. For more information, check out the documentation below:"
     default: //return empty string
       break;
   }
@@ -59,27 +47,40 @@ function renderLicenseSection(license) {
 function generateMarkdown(data) {
   return `# ${data.title}
 
-  ${badge}
+  ${renderLicenseBadge(data.license)}
   
   ## Table of Contents
   
-  ## Description, Installation, Usage, Contributing, and Tests
 
+  ## Description
+  
   ${data.description}
 
-  ${data.usage}
-
-  ${data.contribution}
-
+  ## Installation
+  
   To install the necessary dependencies, run the following command:
   
   ${data.installation}
 
+  ## Usage 
+
+  ${data.usage}
+  
+  ## Contributions
+
+  ${data.contribution}
+  
+  ## Tests
+
+  To run tests on the code, use the following command:
+
+  ${data.test}
+
   ## License
 
-  ${licenseDescription}
+  ${renderLicenseSection(data.license)}
   
-  ${licenseLink}
+  ${renderLicenseLink(data.license)}
 
   ## Questions
   
