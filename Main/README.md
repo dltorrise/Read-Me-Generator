@@ -37,9 +37,7 @@
 
   To run tests on the code, use the following command:
 
-  
-  npm test
-  
+  ```npm test```
 
   ## License
 
@@ -49,7 +47,7 @@
 
   ## Questions
   
-  If you have any further questions, please email me at [workemail@workemail.com](workemail@workemail.com)
+  If you have any further questions, please email me at [workemail@workemail.com](workemail@workemail.com).
   
   Here is my [Github Profile](https://github.com/githubuser) for more information on my other projects. 
 

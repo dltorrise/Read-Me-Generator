@@ -50,6 +50,10 @@ function generateBackTicks(input) {
   ${input}
   `
 }
+
+//inline code block can be in sentence with one back tic
+// \ will escape character after it, js will treat it as plain text
+//three back tics will create code block
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title}
@@ -91,7 +95,7 @@ function generateMarkdown(data) {
 
   To run tests on the code, use the following command:
 
-  ${generateBackTicks(data.test)}
+  \`\`\`${data.test}\`\`\`
 
   ## License
 

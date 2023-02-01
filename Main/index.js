@@ -1,4 +1,3 @@
-//code blocks
 //git ignore
 //make video
 //make sure to finish read me
