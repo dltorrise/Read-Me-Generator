@@ -14,4 +14,4 @@ Here is a screenshot of an example output of the application
 
 The following is a video that I made walking through the code and functionality of this application:
 
-[Click here](Link)
+[Click here](https://watch.screencastify.com/v/LiZqSA1EWyN9TIukXeWq)

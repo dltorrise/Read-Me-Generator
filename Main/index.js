@@ -1,7 +1,3 @@
-//git ignore
-//make video
-//make sure to finish read me
-
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
@@ -51,7 +47,7 @@ const questions = [
         type: 'input', 
         name: 'contribution',
         message: 'What does the user need to know about contributing to the repo?',
-        default: 'Please stand by while I go over your changes'
+        default: 'Please stand by while I go over your changes.'
     },
     {
         type: 'input', 
