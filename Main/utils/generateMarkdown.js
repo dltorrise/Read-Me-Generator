@@ -43,14 +43,6 @@ function renderLicenseSection(data) {
   }
 }
 
-
-//my attempt at adding code blocks
-function generateBackTicks(input) {
-  return `
-  ${input}
-  `
-}
-
 //inline code block can be in sentence with one back tic
 // \ will escape character after it, js will treat it as plain text
 //three back tics will create code block
@@ -81,7 +73,7 @@ function generateMarkdown(data) {
   
   To install the necessary dependencies, run the following command:
   
-  ${data.installation}
+  \`\`\`${data.installation}\`\`\`
 
   ### Usage 
 
