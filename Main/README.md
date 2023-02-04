@@ -1,6 +1,6 @@
 # Project 1
 
-  undefined
+  
   
   ## Table of Contents
   
@@ -41,7 +41,7 @@
 
   ## License
 
-  No license was specified for this project
+  No license was specified for this project.
   
   
 
