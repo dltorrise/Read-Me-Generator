@@ -1,6 +1,6 @@
-# Random Password Generator
+# Project 1
 
-  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+  undefined
   
   ## Table of Contents
   
@@ -15,7 +15,7 @@
 
   ## Description
   
-  Generate a random password using JavaScript
+  Still in progress
 
   ## General Information
   
@@ -31,7 +31,7 @@
   
   ### Contributions
 
-  Please stand by while I go over your changes
+  Please stand by while I go over your changes.
   
   ### Tests
 
@@ -41,13 +41,13 @@
 
   ## License
 
-  The license used in this project is the MIT License. For more information, check out the documentation below:
+  No license was specified for this project
   
-  https://opensource.org/licenses/MIT
+  
 
   ## Questions
   
-  If you have any further questions, please email me at [danitee@gmail.com](danitee@gmail.com).
+  If you have any further questions, please email me at [workemail@workemail.com](workemail@workemail.com).
   
-  Here is my [Github Profile](https://github.com/dltorrise) for more information on my other projects. 
+  Here is my [Github Profile](https://github.com/githubuser) for more information on my other projects. 
 

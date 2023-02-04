@@ -24,7 +24,7 @@ function renderLicenseLink(data) {
     case 'BSD 3':
       return "https://opensource.org/licenses/BSD-3-Clause"
     default: //return empty string
-      break;
+      return ""
   }
 }
 
@@ -39,9 +39,11 @@ function renderLicenseSection(data) {
     case 'BSD 3':
       return "The license used in this project is the BSD 3 License. For more information, check out the documentation below:"
     default: //return empty string
-      break;
+      return "No license was specified for this project."
   }
 }
+
+//break and return will do the same thing
 
 //inline code block can be in sentence with one back tic
 // \ will escape character after it, js will treat it as plain text
