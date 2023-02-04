@@ -10,8 +10,12 @@ Here is a screenshot of an example output of the application
 
 ![Screenshot of README.md with command line on bottom](./Main/images/screenshot.png)
 
-## Video
+## Demo
 
-The following is a video that I made walking through the code and functionality of this application:
+The following is a demo that I made walking through the code and functionality of this application:
 
-[Click here](https://watch.screencastify.com/v/LiZqSA1EWyN9TIukXeWq)
+
+https://user-images.githubusercontent.com/24580349/216782493-ead92c33-81f8-4868-a522-d04399e17e98.mp4
+
+
+[Clickable link here](https://watch.screencastify.com/v/LiZqSA1EWyN9TIukXeWq)
